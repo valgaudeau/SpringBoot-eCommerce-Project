@@ -12,7 +12,7 @@ public interface ProductService
 	
 	List<Product> getAllActiveProducts();
 	
-//	List<Product> getAllActiveProductsByCategory(int categoryId);
+	List<Product> getAllActiveProductsByCategory(int categoryId);
 	
 	Product saveProduct(Product product);
 	

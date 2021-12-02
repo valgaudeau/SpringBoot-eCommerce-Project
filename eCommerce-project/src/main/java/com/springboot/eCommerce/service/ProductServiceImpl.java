@@ -32,11 +32,11 @@ public class ProductServiceImpl implements ProductService
 		return productRepository.findAll(Sort.by("active"));
 	}
 	
-//	@Override
-//	public List<Product> getAllActiveProductsByCategory(int categoryId) 
-//	{
-//		return productRepository.getAllActiveProductsByCategory(categoryId);
-//	}
+	@Override
+	public List<Product> getAllActiveProductsByCategory(int categoryId) 
+	{
+		return productRepository.getAllActiveProductsByCategory(categoryId);
+	}
 
 	@Override
 	public Product saveProduct(Product product) { return productRepository.save(product); }

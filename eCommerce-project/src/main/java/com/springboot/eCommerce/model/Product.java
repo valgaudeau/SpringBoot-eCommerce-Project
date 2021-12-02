@@ -7,10 +7,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="products")
+// See https://www.objectdb.com/java/jpa/query/named for explanation of NamedQueries
+@NamedQueries({    
+	@NamedQuery(name="Product.getAllActiveProductsByCategory",
+			    query="SELECT p FROM Product p WHERE p.categoryId=?1 and p.active=true")
+})
 public class Product 
 {
 	@Id
