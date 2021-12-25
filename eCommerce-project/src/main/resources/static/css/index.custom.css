@@ -1,0 +1,31 @@
+
+/*
+.header a:hover
+{
+	opacity: 0.8;
+	color: rgb(255, 128, 128) !important;
+}
+*/
+
+.bg-dark
+{
+	background-color: rgb(10,10,10) !important;
+}
+
+.header li a:hover
+{
+	opacity: 0.8;
+	color: rgb(255, 128, 128) !important;
+}
+
+.header img
+{
+	padding-left: 10px;
+}
+
+footer a:hover
+{
+	opacity: 0.8;
+	color: rgb(255, 128, 128) !important;
+}
+
